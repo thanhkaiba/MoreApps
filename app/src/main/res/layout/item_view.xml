@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:layout_marginBottom="15dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/app_image"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:maxWidth="70dp"
+            android:layout_marginStart="5dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_height="70dp" />
+
+        <LinearLayout
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:gravity="bottom"
+            android:layout_height="match_parent">
+
+            <com.example.tienthanh.firstapp.custom.MyTextView
+                android:id="@+id/app_name"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:text="@string/app_name"
+                android:textSize="16sp"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_gravity="end"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.example.tienthanh.firstapp.custom.MyTextView
+                    android:gravity="bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="#D02462"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/app_size"/>
+
+                <com.example.tienthanh.firstapp.custom.MyButton
+                    android:id="@+id/app_download"
+                    android:layout_gravity="bottom"
+                    android:text="@string/app_download_string"
+                    android:layout_marginStart="4dp"
+                    android:padding="4dp"
+                    android:background="@drawable/my_button"
+                    android:textColor="#fff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <include layout="@layout/horizontal_line">
+    </include>
+</LinearLayout>

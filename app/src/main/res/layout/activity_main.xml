@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#e3101010"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:background="#000"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.tienthanh.firstapp.custom.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#D02462"
+            android:layout_gravity="top"
+            android:text="@string/app_home"
+            />
+        <com.example.tienthanh.firstapp.custom.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/more_apps_string"
+            android:textColor="#D02462"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+    <ListView
+
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
